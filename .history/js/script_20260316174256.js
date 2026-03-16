@@ -13,7 +13,7 @@ function addTask(){
 
     li.innerHTML = `
     <span>${taskText}</span>
-    <button class="delete"><img src="images/delete.png" alt="Delete icon"></button>
+    <button class="delete">X</button>
     `
 
     list.appendChild(li)

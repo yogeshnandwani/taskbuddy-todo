@@ -22,7 +22,7 @@ h1{
 .task-input{
     display:flex;
     border-radius: 50px;
-    background-color: #f0f0f0;
+    background-color: #eee;
 }
 
 input{
@@ -31,7 +31,7 @@ input{
     border: none;
     border-radius: 50px;
     padding: 0.8rem 1.5rem;
-    background-color: #f0f0f0;
+    background-color: #eee;
     font-size: 14px;
 }
 
@@ -60,21 +60,21 @@ ul{
 }
 
 li{
-    background-color: #f0f0f0;
+    background-color: #eee;
     display: flex;
     align-items: center;
     padding: 10px;
     justify-content: space-between;
-    border: 1px solid #00000005;
-    border-radius: 8px;
+    border: 1px solid #00000001;
+    border-radius: 50px;
     width: 100%;
     display:flex;
     justify-content:space-between;
 }
 
 li .delete {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
     border: none;
     background-color: transparent;
     display: flex;
@@ -85,14 +85,14 @@ li .delete {
 }
 
 li .delete img {
-    width: 1.5rem;
+    width: 1.8rem;
     height: auto;
     object-fit: contain;
     border-radius: 50%;
-    filter: saturate(0);
-    transition: all 0.1s ease-in;
+    transition: all 0.3s ease-in-out;
 }
 
 li .delete:hover img{
-    filter: saturate(1);
+    filter: brightness(1.1);
+    box-shadow: 0 0 8px rgba(241, 55, 55, 0.611);
 }
