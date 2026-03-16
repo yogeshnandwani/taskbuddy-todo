@@ -43,7 +43,7 @@ input:focus{
     padding:0.8rem 2rem;
     border: none;
     border-radius: 50px;
-    background-color: #e75805;
+    background-color: #127301;
     color: #f4f6f9;
     cursor:pointer;
     font-size: 14px;
@@ -57,13 +57,6 @@ ul{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-ul .heading{
-    align-self: flex-start;
-    font-weight: 500;
-    margin-bottom: 5px;
-    color: rgb(44, 44, 44);
 }
 
 li{

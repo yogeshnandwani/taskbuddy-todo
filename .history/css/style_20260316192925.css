@@ -43,7 +43,7 @@ input:focus{
     padding:0.8rem 2rem;
     border: none;
     border-radius: 50px;
-    background-color: #e75805;
+    background-color: #127301;
     color: #f4f6f9;
     cursor:pointer;
     font-size: 14px;
@@ -59,20 +59,12 @@ ul{
     align-items: center;
 }
 
-ul .heading{
-    align-self: flex-start;
-    font-weight: 500;
-    margin-bottom: 5px;
-    color: rgb(44, 44, 44);
-}
-
 li{
     display: flex;
     align-items: center;
-    padding: 12px 0;
+    padding: 10px;
     justify-content: space-between;
-    border-top: 1px solid #00000027;
-    border-bottom: 1px solid #00000027;
+    border: 1px 1pxpx 1px solid #000;
     width: 100%;
     display:flex;
     justify-content:space-between;
