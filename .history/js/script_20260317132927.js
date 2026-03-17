@@ -86,7 +86,6 @@ function updateTaskCount(){
     } else{
         countText = `${remaining} tasks left`
     }
-    
     document.getElementById("taskCount").textContent = countText
 }
 

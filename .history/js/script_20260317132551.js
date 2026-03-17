@@ -77,16 +77,10 @@ function updateTaskCount(){
 
     const remaining = tasks.filter(task => !task.done).length
 
-    let countText = ""
+    const countText = remaining === 1 
+        ? "1 task left" 
+        : `${remaining} tasks left`
 
-    if(remaining === 0){
-        countText = "No tasks left"
-    } else if(remaining === 1){
-        countText = "1 task left"
-    } else{
-        countText = `${remaining} tasks left`
-    }
-    
     document.getElementById("taskCount").textContent = countText
 }
 
