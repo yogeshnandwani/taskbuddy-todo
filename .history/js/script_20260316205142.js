@@ -53,7 +53,7 @@ function renderTasks(){
 list.addEventListener("click", function(e){
     if(e.target.classList.contains("check")){
 
-        const index = [...list.children].indexOf(e.target.closest("li"))
+        const index = [...list.children].indexOf(e.target.parentElement)
 
         tasks[index].done = e.target.checked
 

@@ -37,10 +37,7 @@ function renderTasks(){
         }
 
         li.innerHTML = `
-        <div class="task-left">
-            <input type="checkbox" class="check" ${task.done ? "checked" : ""}>
-            <span>${task.text}</span>
-        </div>
+        <span>${task.text}</span>
         <button class="delete">
             <img src="images/delete.png" alt="Delete icon">
         </button>
@@ -51,11 +48,10 @@ function renderTasks(){
 }
 
 list.addEventListener("click", function(e){
-    if(e.target.classList.contains("check")){
+    if(e.target.tagName === "SPAN"){
+        const index = [...list.children].indexOf(e.target.parentElement)
 
-        const index = [...list.children].indexOf(e.target.closest("li"))
-
-        tasks[index].done = e.target.checked
+        tasks[index].done = !tasks[index].done
 
         saveTasks()
     }

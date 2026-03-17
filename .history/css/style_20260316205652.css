@@ -47,15 +47,6 @@ input:focus{
     color: #f4f6f9;
     cursor:pointer;
     font-size: 14px;
-    transition: background-color 0.1s ease-in-out;
-}
-
-#addBtn:hover{
-    background-color: #ef6000;
-}
-
-#addBtn:active{
-    background-color: #de5404;
 }
 
 ul{
@@ -135,8 +126,8 @@ li .delete:hover img{
 }
 
 .task-left input:checked{
-    width: 0.9rem;
-    height: 0.9rem;
+    width: 1rem;
+    height: 1rem;
     accent-color: #026804;
     cursor: pointer;
 }

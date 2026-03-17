@@ -47,15 +47,6 @@ input:focus{
     color: #f4f6f9;
     cursor:pointer;
     font-size: 14px;
-    transition: background-color 0.1s ease-in-out;
-}
-
-#addBtn:hover{
-    background-color: #ef6000;
-}
-
-#addBtn:active{
-    background-color: #de5404;
 }
 
 ul{
@@ -73,19 +64,15 @@ ul{
     font-weight: 500;
     margin-bottom: 5px;
     color: #000;
-    display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    gap: 5px;
 }
 
 .task-heading span{
-    width: 16px;
+    width: ;: 16px;
 }
 
 .task-heading span img{
-    width: 1.8rem;
-    height: auto;
+    height: 100%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -127,26 +114,4 @@ li .delete img {
 
 li .delete:hover img{
     filter: saturate(1);
-}
-
-.task-left{
-    display: flex;
-    align-items: center;
-}
-
-.task-left input:checked{
-    width: 0.9rem;
-    height: 0.9rem;
-    accent-color: #026804;
-    cursor: pointer;
-}
-
-.check{
-    margin-right:10px;
-}
-
-.completed{
-    text-decoration: line-through;
-    color: #026804;
-    opacity: 0.6;
 }

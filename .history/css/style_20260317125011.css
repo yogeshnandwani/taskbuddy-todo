@@ -47,11 +47,10 @@ input:focus{
     color: #f4f6f9;
     cursor:pointer;
     font-size: 14px;
-    transition: background-color 0.1s ease-in-out;
 }
 
 #addBtn:hover{
-    background-color: #ef6000;
+    background-color: #ee5f00;
 }
 
 #addBtn:active{

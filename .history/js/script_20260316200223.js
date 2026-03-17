@@ -10,10 +10,7 @@ function addTask() {
 
     if (taskText === "") return
 
-    tasks.push({
-        text: taskText,
-        done: false
-    })
+    tasks.push(taskText)
 
     saveTasks()
 
@@ -32,15 +29,8 @@ function renderTasks(){
 
         const li = document.createElement("li")
 
-        if(task.done){
-            li.classList.add("completed")
-        }
-
         li.innerHTML = `
-        <div class="task-left">
-            <input type="checkbox" class="check" ${task.done ? "checked" : ""}>
-            <span>${task.text}</span>
-        </div>
+        <span>${task}</span>
         <button class="delete">
             <img src="images/delete.png" alt="Delete icon">
         </button>
@@ -51,15 +41,6 @@ function renderTasks(){
 }
 
 list.addEventListener("click", function(e){
-    if(e.target.classList.contains("check")){
-
-        const index = [...list.children].indexOf(e.target.closest("li"))
-
-        tasks[index].done = e.target.checked
-
-        saveTasks()
-    }
-
     const deleteBtn = e.target.closest(".delete")
 
     if(deleteBtn){
